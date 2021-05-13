@@ -1,0 +1,234 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    background-color: violet;
+}
+
+.container {
+    position: relative;
+    margin: 20px 200px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    width: 80%;
+}
+
+#task-add {
+    visibility: hidden;
+}
+
+#task-add-item {
+    visibility: hidden;
+}
+
+.task-text {
+    display: flex;
+    margin-left: 30px;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.heading-bold {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heading-thin {
+    font-size: 50px;
+    font-weight: 100;
+    margin-left: 2px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.text {
+    margin-left: 20px;
+    font-size: 30px;
+    margin-right: 100px;
+}
+
+.btn {
+    color: red;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.task-add-container {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    border: 1px solid red;
+    width: 30%;
+    height: 30%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px gray;
+    background-color: white;
+}
+
+.list {
+    text-align: center;
+    font-weight: 400;
+    font-size: smaller
+}
+
+#input-task {
+    width: 75%;
+    height: 40px;
+    margin-left: 60px;
+    margin-top: 40px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.button-holder {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-card-btn {
+    width: 25%;
+    background-color: red;
+    font-size: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px 10px gray;
+    cursor: pointer;
+}
+
+.card-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    border: 1px solid rgb(255, 0, 0, 0.5);
+    position: relative;
+    min-height: 300px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom: 1rem;
+}
+
+.task-add-delete-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.delete-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    display: inline-block;
+    color: white;
+}
+
+.add-taskitem-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.task-add-container-in-this-card {
+    width: 400px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 2px 0px grey;
+    position: fixed;
+    top: 250px;
+    left: 500px;
+    z-index: 2;
+    background-color: white;
+    visibility: hidden;
+}
+
+.new-list {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#input-taskitem {
+    height: 32px;
+    width: 350px;
+    margin-left: 30px;
+    border: 1px solid red;
+    box-shadow: 4px 4px 2px grey;
+    border-radius: 5px;
+    display: block;
+}
+
+.popup-btn {
+    height: 35px;
+    width: 100px;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sub-task {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: black;
+}
+
+.complete-this-task {
+    height: 20px;
+    width: 100px;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.7rem;
+}

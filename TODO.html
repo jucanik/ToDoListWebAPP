@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TODO.CSS">
+    <script src="https://use.fontawesome.com/95939f6a6d.js"></script>
+    <title>TO-DO-APP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-row">
+            <div class="task-text">
+                <div class="heading-bold">Tasks</div>
+                <div class="heading-thin">List</div>
+            </div>
+            <div class="button-container">
+                <div><i id="task-add-popup-btn" class="fa fa-plus-circle btn" aria-hidden="true"></i></div>
+                <div class="text">Add Lists</div>
+            </div>
+        </div>
+        <div class="card-container">
+        </div>
+    </div>
+    <div id="task-add" class="task-add-container">
+        <div class="list">Add New List</div>
+        <input id="input-task" type="text">
+        <div class="button-holder">
+            <button class="add-card-btn" id="addpopupbutton">ADD</button>
+            <button class="add-card-btn" id="closepopup" onclick="closepopup()">CLOSE</button>
+        </div>
+    </div>
+    <div id="task-add-item" class="task-add-container-in-this-card">
+        <div class="new-list">Add New Task Item</div>
+        <input id="input-taskitem" type="text">
+        <div id="add-task-item-btn" class="popup-btn">ADD</div>
+        <div id="close-this-card" class="popup-btn" onclick="closepopup()">CLOSE</div>
+    </div>
+    <script src="TODO.js"></script>
+</body>
+
+</html>
