@@ -53,17 +53,19 @@ document.querySelector("#add-task-item-btn").addEventListener("click", () => {
     node.setAttribute("class", "task");
     node.setAttribute("id", Date.now());
     var ID = elementname.parentNode.parentNode.id;
-    node.innerHTML = `<span class="sub-task">${inputval}</span><button class="complete-this-task"onclick="completethistask(this)">Mark Done</button>`
+    node.innerHTML = `<div class="sub-task-holder">
+    <span class="sub-task">${inputval}</span><button class="complete-this-task"onclick="completethistask(this)">Mark Done</button>
+    </div>`
     var card = document.getElementById(ID);
     card.querySelector(".task-description").appendChild(node);
     closepopup();
 })
 
 function completethistask(taskname) {
-    var ID = taskname.parentNode.id;
+    var ID = taskname.parentNode.parentNode.id;
     var subtask = document.getElementById(ID);
     subtask.querySelector(".complete-this-task").style.visibility = "hidden";
     subtask.querySelector(".sub-task").style.color = "red";
     subtask.querySelector(".sub-task").style.textDecoration = "line-through";
-    subtask.querySelector(".sub-task").style.textalign = "center";
+    /*subtask.removeChild(subtask.querySelector(".sub-task-holder"));*/
 }
