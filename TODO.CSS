@@ -134,6 +134,7 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .task-add-delete-button {
@@ -157,6 +158,8 @@ body {
 .add-taskitem-button {
     width: 30px;
     height: 30px;
+    text-align: right;
+    padding-right: 10px;
     font-size: 20px;
     border-radius: 50%;
     border: none;
@@ -214,6 +217,19 @@ body {
     font-size: 1.5rem;
 }
 
+.task-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    align-content: space-between;
+    align-items: flex-start;
+}
+
+.sub-task-holder {
+    margin-bottom: 50px;
+}
+
 .sub-task {
     font-size: 0.7rem;
     font-weight: 400;
@@ -231,4 +247,5 @@ body {
     border: none;
     border-radius: 3px;
     font-size: 0.7rem;
+    padding: 4px;
 }
