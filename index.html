@@ -23,7 +23,24 @@
                 <div class="text">Add Lists</div>
             </div>
         </div>
+        <p class="NoIteminTodo">No Items In The ToDo List</p>
         <div class="card-container">
+        </div>
+    </div>
+    <div class="fixed-task">
+        <div class="row">
+            <div class="back-button">
+                <div><i id="btn-back" class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>
+                <div class="text">Go Back</div>
+            </div>
+            <div class="card-title-heading"></div>
+            <div class="button-container">
+                <div><i id="buttonaddval" class="fa fa-plus-circle btn" aria-hidden="true"></i></div>
+                <div class="text">Add Lists</div>
+            </div>
+        </div>
+        <div class="card-container">
+
         </div>
     </div>
     <div id="task-add" class="task-add-container">
@@ -31,14 +48,14 @@
         <input id="input-task" type="text">
         <div class="button-holder">
             <button class="add-card-btn" id="addpopupbutton">ADD</button>
-            <button class="add-card-btn" id="closepopup" onclick="closepopup()">CLOSE</button>
+            <button class="add-card-btn" id="closepopup" onclick="closepopupitem()">CLOSE</button>
         </div>
     </div>
     <div id="task-add-item" class="task-add-container-in-this-card">
         <div class="new-list">Add New Task Item</div>
         <input id="input-taskitem" type="text">
         <div id="add-task-item-btn" class="popup-btn">ADD</div>
-        <div id="close-this-card" class="popup-btn" onclick="closepopup()">CLOSE</div>
+        <div id="close-this-card" class="popup-btn" onclick="closepopupitem()">CLOSE</div>
     </div>
     <script src="TODO.js"></script>
 </body>
