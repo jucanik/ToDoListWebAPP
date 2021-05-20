@@ -7,12 +7,18 @@ document.querySelector("#task-add-popup-btn").addEventListener("click", () => {
     document.querySelector("#task-add").style.visibility = "visible";
 })
 
+
 function closepopup() {
     if (flag == 1) {
         document.querySelector(".container").style.visibility = "visible";
         document.querySelector(".fixed-task").style.visibility = "hidden";
         for (let i = 0; i < todoitems.length; i++) {
             document.querySelector(".container").querySelector(".card-container").appendChild(todoitems[i]);
+        }
+        var pos = document.querySelector(".container");
+        var node = document.querySelector(".card-container");
+        for (let i = 1; i < node.childNodes.length; i++) {
+            node.childNodes[i].childNodes[0].childNodes[1].style.cursor = "pointer";
         }
         flag = 0;
     } else if (flag == 0) {
@@ -61,7 +67,8 @@ function onlythiscard(element) {
 }
 document.querySelector("#btn-back").addEventListener("click", () => {
     flag = 0;
-    var node = document.querySelector(".card-container");
+    var pos = document.querySelector(".container");
+    var node = pos.querySelector(".card-container");
     var headingnode = document.querySelector(".card-title-heading");
     while (headingnode.firstChild) {
         headingnode.removeChild(headingnode.firstChild);
@@ -71,7 +78,10 @@ document.querySelector("#btn-back").addEventListener("click", () => {
     }
     document.querySelector(".fixed-task").style.visibility = "hidden";
     document.querySelector(".container").style.visibility = "visible";
-
+    console.log(node.childNodes[1].childNodes);
+    for (let i = 1; i < node.childNodes.length; i++) {
+        node.childNodes[i].childNodes[0].childNodes[1].style.cursor = "pointer";
+    }
 })
 document.querySelector("#addpopupbutton").addEventListener("click", () => {
     var node = document.createElement("div");
@@ -135,6 +145,9 @@ function deletethiscard(Element) {
         pos.style.visibility = "visible";
         document.querySelector(".fixed-task").style.visibility = "hidden";
         flag = 0;
+        for (let i = 1; i < node.childNodes.length; i++) {
+            node.childNodes[i].childNodes[0].childNodes[1].style.cursor = "pointer";
+        }
     } else if (flag == 0) {
         var pos = document.querySelector(".container");
         var node = pos.querySelector(".card-container");
