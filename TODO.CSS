@@ -249,3 +249,35 @@ body {
     font-size: 0.7rem;
     padding: 4px;
 }
+
+.fixed-task {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-right: 400px;
+    width: 80%;
+}
+
+.back-button {
+    display: flex;
+    margin-left: 30px;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.task-name {
+    cursor: pointer;
+}
+
+#btn-back {
+    cursor: pointer;
+}
